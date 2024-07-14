@@ -24,7 +24,8 @@
             </div>
 
             <div class="text">
-                <h1>Efe Marko<br>Güldere</h1>
+                <h1>Efe Marko Güldere</h1>
+                <br>
                 <h2 id="title">
                     <img src="./src/images/icons/suitcase.png" class="icon"> IT noorem spetsialist
                 </h2>
@@ -87,7 +88,7 @@
                     <li>
                         <img class="icon" src="./src/images/icons/mail.png">
                         <br>
-                        <a href="mailto:efemarko1@gmial.com">efemarko1@gmial.com</a>
+                        <a href="mailto:efemarko1@gmail.com">efemarko1@gmail.com</a>
                     </li>
                     <li>
                         <img class="icon" src="./src/images/icons/location.png">
@@ -111,7 +112,7 @@
         <div class="collapsable">
             <div class="haridus">
                 <h1>Haridus</h1>
-
+<br>
                 <div class="school">
                     <h2>Rakvere Põhikool</h2>
                     <h3>
@@ -136,6 +137,7 @@
             <div class="kogemused">
 
                 <h1>Kogemused</h1>
+                <br>
                 <div class="jw">
                     <h2>Jeld-Wen Eesti AS - praktika</h2>
                     <h3>
@@ -275,7 +277,7 @@
         <div id="gallery">
 
             <div class="item terraform anible">
-                <h1>Majutuskeskkonna_Riistvara_efe </h1>
+                <h1>Majutuskeskkonna Tarkvara </h1>
                 <p>
                     Siin on koolis õpitud Terraform ja Ansible kasutamine koos Proxmox hüperviisoriga.
                 </p>
@@ -507,14 +509,16 @@
 </script>
 <style>
     :root {
-        --bg: #1e272e;
-        --container-bg: #2f3640;
-        --text: #f5f6fa;
-        --text-alt: #dcdde1;
-        --navbar: #353b48;
+        --bg:#344966;
+        --container-bg: #0d1821;
+        --text: #f0f4ef;
+        --text-alt: #0d1821;
+        --text-accent: #5e81b0;
+        --navbar: #0d1821;
         --icon-bg: var(--text);
-        --accent: #e1b12c;
-        --button: #40739e;
+        --accent: #b4cded;
+        --button: #BFCC94;
+        --container-bg-alt: #254055;
         --border-radius: 12px;
         --padding: 20px;
         --margin: 20px;
@@ -613,7 +617,7 @@
         font-size: 2.5rem;
         font-weight: bolder;
         margin-bottom: 1rem;
-        color: var(--text-alt);
+        color: var(--text);
         margin-top: 40px;
     }
 
@@ -621,14 +625,14 @@
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 0.75rem;
-        color: var(--text-alt);
+        color: var(--text);
     }
 
     h3 {
         font-size: 1.5rem;
         font-style: italic;
         margin-bottom: 0.5rem;
-        color: var(--text-alt);
+        color: var(--text);
     }
 
     /* Paragraph and list item styles */
@@ -689,7 +693,7 @@
         display: flex;
         flex-wrap: nowrap;
         gap: 20px;
-        background-color: var(--button);
+        background-color: var(--container-bg-alt);
         padding: 10px;
         border-radius: 10px;
         margin-top: 10px;
@@ -700,6 +704,7 @@
     button {
         background-color: var(--button);
         color: var(--text-alt);
+        font-weight: bold;
         border-radius: 10px;
         padding: 10px;
         border: none;
@@ -731,6 +736,9 @@
 
         #gallery .item {
             flex: 1 1 100%;
+        }
+        div.haridus, div.kogemused{
+            width: 100%;
         }
     }
 </style>
