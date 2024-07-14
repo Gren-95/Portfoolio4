@@ -53,15 +53,15 @@
                 <ul class="traits-list">
                     <li>
                         <img src="./src/images/icons/adapt.png" class="icon">
-                        <p>Kohanemisvõimeline</p>
+                        <p>Kiire kohanemisvõimeline</p>
                     </li>
                     <li>
                         <img src="./src/images/icons/creativity.png" class="icon">
-                        <p>Loominguline</p>
+                        <p>Väga loominguline</p>
                     </li>
                     <li>
                         <img src="./src/images/icons/dedication.png" class="icon">
-                        <p>Pühendunud</p>
+                        <p>Väga pühendunud</p>
                     </li>
                     <li>
                         <img src="./src/images/icons/file.png" class="icon">
@@ -112,7 +112,7 @@
         <div class="collapsable">
             <div class="haridus">
                 <h1>Haridus</h1>
-<br>
+                <br>
                 <div class="school">
                     <h2>Rakvere Põhikool</h2>
                     <h3>
@@ -277,7 +277,7 @@
         <div id="gallery">
 
             <div class="item terraform anible">
-                <h1>Majutuskeskkonna Tarkvara </h1>
+                <h1>Majutuskesk-konna Tarkvara </h1>
                 <p>
                     Siin on koolis õpitud Terraform ja Ansible kasutamine koos Proxmox hüperviisoriga.
                 </p>
@@ -509,7 +509,7 @@
 </script>
 <style>
     :root {
-        --bg:#1d2530;
+        --bg: #1d2530;
         --container-bg: #0d1821;
         --text: #f0f4ef;
         --text-alt: #0d1821;
@@ -669,6 +669,14 @@
             width: 100%;
             height: auto;
         }
+
+        .container-1,
+        .container-2,
+        .container-3 {
+            border-radius: 0px;
+            padding: var(--padding);
+            margin: 0;
+        }
     }
 
     iframe {
@@ -737,8 +745,14 @@
         #gallery .item {
             flex: 1 1 100%;
         }
-        div.haridus, div.kogemused{
+
+        div.haridus,
+        div.kogemused {
             width: 100%;
         }
+        #gallery .item {
+
+        margin: 0px;
+    }
     }
 </style>
